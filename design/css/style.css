@@ -6,11 +6,20 @@
   --white: hsla(0, 0%, 100%, 0.75);
   --light-gray: hsl(0, 0%, 95%);
 
-  --font-size: 15px;
+  --font-size: 0.9375rem;
 
   --font-400: 'Lexend Deca', sans-serif;
-  --font-700: 'Big Shoulders Display', cursive;
+  --font-700: 'Big Shoulders Display', sans-serif;
 }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
 .container {
   max-width: 920px;
   display: flex;
@@ -19,17 +28,17 @@
   color: var(--white);
   font-family: var(--font-400);
   font-weight: 400;
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 1.7;
-  height: 100vh;
-  margin: auto;
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 .orange {color: var(--bg-orange);}
 .cyan {color: var(--bg-cyan);}
 .dark-cyan {color: var(--bg-dark-cyan);}
 
 .card {
-  padding: 50px;
+  padding: 3.125rem;
 }
 
 .card1 {
@@ -47,24 +56,25 @@
 .btn {
   text-decoration: none;
   background: white;
-  padding: 15px 30px;
-  border-radius: 25px;
+  padding: 0.9375rem 1.875rem;
+  border-radius: 1.5625rem;
+  transition: all 0.3 ease-in;
 }
 .car-style {
-  font-size: 40px;
+  font-size: 2.5rem;
   text-transform: uppercase;
   font-family: var(--font-700);
   font-weight: 700;
-  margin: 25px 0;
+  margin: 1.5625rem 0;
 }
 .p-text {
-  margin-top: 30px;
-  margin-bottom: 75px;
+  margin-top: 1.875rem;
+  margin-bottom: 4.6875rem;
   opacity: 0.8;
 }
 
 .btn:hover {
-  border: 2px solid var(--white);
+  border: 0.125rem solid var(--white);
   background-color: transparent;
   color: var(--white);
   cursor: pointer;
